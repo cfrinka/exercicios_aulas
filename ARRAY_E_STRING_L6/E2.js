@@ -3,6 +3,7 @@ let jogador1 = rs.question('Qual o seu nome? Você será o Jogador 1 ')
 let jogador2 = rs.question('Qual o seu nome? Você será o jogador 2 ')
 let arrayjogador1 = [] ;
 let arrayjogador2 = [];
+let diferentes = [];
 
 for (let i = 0; i < 5 ; i++){
     let nA = rs.questionInt(` ${jogador1}, insira um número: `);
@@ -15,16 +16,9 @@ for (let i = 0; i < 5; i++){
     arrayjogador2.push(nB)
 }
 for (let i = 0; i <= 4; i++){
-    if (arrayjogador1.indexOf(arrayjogador2[i]) > -1) {
-        comum.push(arrayjogador2[i])
+    if (arrayjogador1.indexOf(arrayjogador2[i]) == -1) {
+        diferentes.push(arrayjogador2[i])
                 
     }
 }
-console.log(`Os número em comum são: ${comum})
-
-
-
-
-
-
-
+console.log(`Os número diferentes são: ${diferentes}`)
