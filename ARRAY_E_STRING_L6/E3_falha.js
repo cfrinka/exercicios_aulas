@@ -1,21 +1,20 @@
 let rs = require('readline-sync');
-
-
-let jogador1 = rs.question('Digite seu nome: ');
-let jogador2 = rs.question('Digite seu nome: ');
-let n1 = rs.questionInt(`${jogador1} digite um número de 1 a 10: `);
-let n2 = rs.questionInt(`${jogador1} digite um número de 1 a 10: `);
-let n3 = rs.questionInt(`${jogador1} digite um número de 1 a 10: `);
-let n4 = rs.questionInt(`${jogador1} digite um número de 1 a 10: `);
-let n5 = rs.questionInt(`${jogador1} digite um número de 1 a 10: `);
-let n6 = rs.questionInt(`${jogador2} digite um número de 1 a 10: `);
-let n7 = rs.questionInt(`${jogador2} digite um número de 1 a 10: `);
-let n8 = rs.questionInt(`${jogador2} digite um número de 1 a 10: `);
-let n9 = rs.questionInt(`${jogador2} digite um número de 1 a 10: `);
-let n10 = rs.questionInt(`${jogador2} digite um número de 1 a 10: `);
-let arrayjogador1 = [n1,n2,n3,n4,n5];
-let arrayjogador2 = [n6,n7,n8,n9,n10];
+let jogador1 = rs.question('Qual o seu nome? Você será o Jogador 1 ')
+let jogador2 = rs.question('Qual o seu nome? Você será o jogador 2 ')
+let arrayjogador1 = [] ;
+let arrayjogador2 = [];
 let juntos = [];
+
+for (let i = 0; i < 5 ; i++){
+    let nA = rs.questionInt(` ${jogador1}, insira um número: `);
+    arrayjogador1.push(nA)
+}
+console.log('=============')
+
+for (let i = 0; i < 5; i++){
+    let nB = rs.questionInt(`${jogador2}, insira um número: `);
+    arrayjogador2.push(nB)
+}
 
 for (let i = 0; i <= 4; i++){
     for (let i2 = 0; i2 <=4; i2++){
