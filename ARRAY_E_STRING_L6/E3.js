@@ -16,14 +16,9 @@ for (let i = 0; i < 5; i++){
     arrayjogador2.push(nB)
 }
 
-for (let i = 0; i <= 4; i++){
-    for (let i2 = 0; i2 <=4; i2++){
-        if (arrayjogador1[i] == arrayjogador2[i2]) {
-        juntos.push(arrayjogador2[i])
-        }
-    }
-}
-console.log(`Os números em comum são: ${juntos}`)
+console.log([...new Set([...arrayjogador1, ...arrayjogador2])])
+
+
 
 // mostrando numero sem sentido
    
