@@ -1,7 +1,7 @@
 let rs = require('readline-sync');
 let dia = 1000 * 60 * 60 *24;
 let hoje = new Date();
-let nascimento = rs.question('Insira sua data de nascimento: AAAA/MM/DD');
+let nascimento = rs.question('Insira sua data de nascimento: AAAA/MM/DD: ');
 let dataNascmiento = new Date(nascimento);
 
 function nascDias(hoje, dataNascmiento){
