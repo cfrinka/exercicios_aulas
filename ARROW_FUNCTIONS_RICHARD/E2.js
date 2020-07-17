@@ -13,6 +13,3 @@ const alunos = {
 }
 console.log(limpaCarro(alunos))
 
-// const {nome} = carro;
-
-// console.log(nome)
