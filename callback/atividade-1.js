@@ -1,0 +1,1 @@
+/* a saída será a mensagem de erro, pois não há arquivo para ser lido */
